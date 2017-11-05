@@ -1,3 +1,12 @@
+# Custom files
+dumps/*
+dumps.zip
+.vscode/*
+package-lock.json
+package.json
+dist/*
+.jshintrc
+
 # Logs
 logs
 *.log
