@@ -3,25 +3,11 @@ $blue: #1063A7;
 $white: #fff;
 $primary: $blue;
 $primary-invert: $white;
+$label-color: $white;
 
-.hero .hero-body .container div {
-    background-color: $white;
-    display: inline-block;
-    height: 320px;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    width: 320px;
+.logo-visualworks img {
     max-width: 100%;
-}
-
-.hero .hero-body .container div img {
-    height: 322px;
-    margin-top: -1px;
-    margin-left: -1px;
-    width: 322px;
-    max-width: 322px;
+    width: 320px;
 }
 
 @import "node_modules/bulma/bulma";
