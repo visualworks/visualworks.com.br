@@ -25,7 +25,6 @@ export default class Layout extends App {
                                         <div className="control">
                                             <select name="os0" className="select">
                                                 <option value="Mensal">Mensal : R$49,90 BRL - monthly</option>
-                                                <option value="Anual">Anual : R$538,92 BRL - yearly</option>
                                             </select>
                                         </div>
                                     </div>
@@ -36,13 +35,13 @@ export default class Layout extends App {
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <label className="label">URL (Ex.: www.seusite.com.br)</label>
+                                        <label className="label">URL</label>
                                         <div className="control">
-                                            <input type="text" name="os2" maxLength="200" className="input" />
+                                            <input type="text" name="os2" maxLength="200" className="input" placeholder="www.seusite.com.br" />
                                         </div>
                                     </div>
                                     <div className="control">
-                                        <button name="submit" className="button is-primary is-inverted">Submit</button>
+                                        <button name="submit" className="button is-primary is-inverted">Cadastrar</button>
                                     </div>
                                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
                                 </form>
