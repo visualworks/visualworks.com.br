@@ -10,4 +10,10 @@ $label-color: $white;
     width: 320px;
 }
 
+.hero-foot {
+    background-color: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 @import "node_modules/bulma/bulma";
