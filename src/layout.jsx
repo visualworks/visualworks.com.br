@@ -18,13 +18,17 @@ export default class Layout extends App {
                                         <input type="hidden" name="hosted_button_id" value="TPMXBSQ39T4E2" />
                                         <input type="hidden" name="currency_code" value="BRL" />
                                         <input type="hidden" name="on0" value="Escolha seu plano abaixo:" />
+                                        <input type="hidden" name="on1" value="Nome Completo" />
                                         <input type="hidden" name="on2" value="URL (Ex.: www.seusite.com.br)" />
                                     </div>
                                     <div className="field">
                                         <label className="label">Escolha seu plano de hospedagem abaixo:</label>
                                         <div className="control">
                                             <select name="os0" className="select">
-                                                <option value="Mensal">Mensal : R$49,90 BRL - monthly</option>
+                                                <option value="Mensal">Compartilhado: R$49,90 BRL - por mês</option>
+                                                <option value="Individual">Individual: R$325,92 BRL - por mês</option>
+                                                <option value="Domínio .com">Domínio .com: R$60,00 BRL - por mês</option>
+                                                <option value="Domínio .com.br">Domínio .com.br: R$45,00 BRL - por mês</option>
                                             </select>
                                         </div>
                                     </div>
@@ -35,7 +39,7 @@ export default class Layout extends App {
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <label className="label">URL</label>
+                                        <label className="label">Domínio</label>
                                         <div className="control">
                                             <input type="text" name="os2" maxLength="200" className="input" placeholder="www.seusite.com.br" />
                                         </div>
