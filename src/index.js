@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Layout from "layout";
+import Layout from "components/Layout";
 
 import "css/style.scss";
 
-const layout = <Layout />;
-
 ReactDOM.render(
-    layout,
+    <Layout />,
     document.getElementById("index")
 );
