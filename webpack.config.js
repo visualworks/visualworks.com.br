@@ -46,24 +46,23 @@ module.exports = {
         hints: "warning",
         maxAssetSize: 600000,
         maxEntrypointSize: 600000,
-        assetFilter: function(assetFilename) {
+        assetFilter: function (assetFilename) {
             return assetFilename.endsWith(".css") || assetFilename.endsWith(".js");
         }
     },
     target: "web",
     stats: "detailed",
-    mode: "production",
     plugins: [
         new webpack.DefinePlugin({
             "process.env": {
-                "NODE_ENV": JSON.stringify("production")
+                "NODE_ENV": JSON.stringify(process.env.NODE_ENV)
             }
         }),
         new UglifyJsPlugin(),
         new HTMLWebpackPlugin({
             title: "Visual Works - Web & Mobile Development",
             author: "Visual Works",
-            description: "Description of this project",
+            description: "A freelancing agency ran by Henrique Mattos leveraging web and mobile development in the cloud. Hosting applications in AWS and e-mails in Google's G Suite, Visual Works has 13 years of history with projects ranging from front-end to back-end and APIs, including ReactJS, PHP, MySQL, Memcached and others cutting-edge technologies.",
             url: "https://www.visualworks.com.br",
             image: "https://www.visualworks.com.br/img/logo-visual-works.png",
             filename: path.resolve(__dirname, "dist/index.html"),

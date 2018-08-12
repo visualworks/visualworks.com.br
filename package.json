@@ -4,9 +4,9 @@
   "description": "To be descripted.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --content-base dist/ --watch --progress --colors",
-    "build": "webpack --config webpack.config.js",
-    "test": "test"
+    "start": "env-cmd ./.env webpack-dev-server --config webpack.config.js --content-base dist/ --watch --progress --colors --mode development",
+    "build": "env-cmd ./.env webpack --config webpack.config.js --mode production",
+    "test": "start-test"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
     "url": "https://github.com/visualworks/visualworks/issues"
   },
   "homepage": "https://github.com/visualworks/visualworks#readme",
-  "dependencies": {},
+  "dependencies": {
+    "env-cmd": "^8.0.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
