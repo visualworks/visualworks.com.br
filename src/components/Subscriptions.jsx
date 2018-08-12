@@ -61,8 +61,8 @@ export default class Subscriptions extends App {
                         <select name="os0" className="select">
                             <option value="Mensal">Compartilhado: R$49,90 BRL - por mês</option>
                             <option value="Individual">Individual: R$325,92 BRL - por mês</option>
-                            <option value="Domínio .com">Domínio .com: R$60,00 BRL - por mês</option>
-                            <option value="Domínio .com.br">Domínio .com.br: R$45,00 BRL - por mês</option>
+                            <option value="Domínio .com">Domínio .com: R$60,00 BRL - por ano</option>
+                            <option value="Domínio .com.br">Domínio .com.br: R$45,00 BRL - por ano</option>
                         </select>
                     </div>
                 </div>
