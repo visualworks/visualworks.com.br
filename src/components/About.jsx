@@ -17,7 +17,7 @@ export default class About extends App {
     }
     aboutEnglish() {
         const aboutEnglish = <div className="content has-text-justified">
-            <h2 className="title is-2">história</h2>
+            {/* <h2 className="title is-2">história</h2> */}
             <p>Visual Works started in 2005 as a web development agency by Henrique Mattos, providing micro and small-size business an online platform to advertise their products and services. In the beginning everything was pure PHP and HTML hosted anywhere with a good pricing offer.</p>
             <p>In 2007, Henrique joined AWM, a digital agency with the same purpose and core, but with a partner named João Paulo Faria, who was strict about quality and boundaries, pushing web applications to its limit. João Paulo became a mentor and his technics absoberd extensively.</p>
             <p>Cloud computing was becoming news in Brazil and AWM rapidly moved all his customer's e-mails to Google Apps, which was free for a certain limit by the time. That was a breakpoint for AWM and the next step was to get rid of the on-premise and dedicated host we had for high monthly fees and move to Rackspace cloud server.</p>
@@ -29,8 +29,8 @@ export default class About extends App {
         return aboutEnglish;
     }
     aboutServices() {
-        const aboutServices = <div className="content">
-            <h2 className="title is-2">serviços</h2>
+        const aboutServices = <div>
+            {/* <h2 className="title is-2 has-text-white">serviços</h2> */}
             <div className="columns">
                 <div className="column">{this.servicesHosting()}</div>
                 <div className="column">{this.servicesEmails()}</div>
@@ -42,12 +42,12 @@ export default class About extends App {
     servicesHosting() {
         const servicesHosting = <div className="card">
             <div className="card-content">
-                <div className="card-header-icon">
-                    <span className="icon is-large">
-                        <i className="fab fa-3x fa-aws"></i>
-                    </span>
-                </div>
                 <div className="has-text-centered">
+                    <p>
+                        <span className="icon is-large">
+                            <i className="fab fa-3x fa-aws"></i>
+                        </span>
+                    </p>
                     <h3 className="is-3">Hospedagem &amp; Domínios</h3>
                 </div>
                 <p>Oferecemos através da Amazon Web Services o serviço de hospedagem e registro de domínios. Contamos com serviços dedicados para banco de dados, aplicações, distribuição de carga, caching, distribuição de conteúdo, certificados SSL e mais.</p>
@@ -59,12 +59,12 @@ export default class About extends App {
     servicesEmails() {
         const servicesEmails = <div className="card">
             <div className="card-content">
-                <div className="card-header-icon">
-                    <span className="icon is-large">
-                        <i className="fab fa-3x fa-google"></i>
-                    </span>
-                </div>
                 <div className="has-text-centered">
+                    <p>
+                        <span className="icon is-large">
+                            <i className="fab fa-3x fa-google"></i>
+                        </span>
+                    </p>
                     <h3 className="is-3">E-mails</h3>
                 </div>
                 <p>A ferramenta G Suite do Google é a plataforma completa para comunicação e organização corporativa na nuvem, oferecendo gerenciamento de e-mails, documentos, calendários, bate-papos e muito mais.</p>
@@ -76,12 +76,12 @@ export default class About extends App {
     servicesWordPress() {
         const servicesWordPress = <div className="card">
             <div className="card-content">
-                <div className="card-header-icon">
-                    <span className="icon is-large">
-                        <i className="fab fa-3x fa-wordpress"></i>
-                    </span>
-                </div>
                 <div className="has-text-centered">
+                    <p>
+                        <span className="icon is-large">
+                            <i className="fab fa-3x fa-wordpress"></i>
+                        </span>
+                    </p>
                     <h3 className="is-3">WordPress</h3>
                 </div>
                 <p>Instalação, configuração, suporte, manutenção e atualização de aplicações WordPress. Se o sistema estiver hospedado conosco, o serviço é gratuito, mas também oferecemos o serviço na sua hospedagem.</p>

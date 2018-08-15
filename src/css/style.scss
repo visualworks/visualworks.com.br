@@ -9,6 +9,10 @@ $primary: $blue;
 $primary-invert: $white;
 $label-color: $white;
 
+body {
+    background-color: $primary;
+}
+
 .navbar h1.logo {
     font-family: all-round-gothic, sans-serif;
     font-style: normal;
@@ -16,9 +20,8 @@ $label-color: $white;
     text-transform: lowercase;
 }
 
-.logo-visualworks img {
-    max-width: 100%;
-    width: 320px;
+.navbar {
+    margin-bottom: 3rem;
 }
 
 img.paypal {

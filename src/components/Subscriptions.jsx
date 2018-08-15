@@ -7,13 +7,13 @@ export default class Subscriptions extends App {
         this.form = this.createContent();
     }
     createContent() {
-        const subscription = <div className="content">
-            <h2 className="title is-2">assinaturas</h2>
+        const subscription = <div className="content has-text-white">
+            <h2 className="title is-2 has-text-white">assinaturas</h2>
             <div className="columns">
                 <div className="column is-one-third">
                     <p>Se você já sabe qual serviço escolher, faça sua assinatura preenchendo o formulário ao lado com a segurança PayPal.</p>
-                    <p>Somente válido para hospedagem e registro de domínios. Para solução de e-mails G Suite ou desenvolver um site, por favor entre em contato através do e-mail <a href="mailto:comercial@visualworks.com.br">comercial@visualworks.com.br</a>.</p>                        
-                    <div className="columns is-centered">
+                    <p>Somente válido para hospedagem e registro de domínios. Para solução de e-mails G Suite ou desenvolver um site, por favor entre em contato através do e-mail <a href="mailto:comercial@visualworks.com.br" className="has-text-white">comercial@visualworks.com.br</a>.</p>                        
+                    <div className="columns is-centered is-hidden-mobile">
                         <div className="column">
                             <span className="icon is-large">
                                 <i className="fab fa-3x fa-paypal"></i>

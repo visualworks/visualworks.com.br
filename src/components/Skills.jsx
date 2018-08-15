@@ -7,24 +7,24 @@ export default class Skills extends App {
         this.skills = this.createContent();
     }
     createContent() {
-        const skills = <div className="content">
-            <h2 className="title is-2">especialidades</h2>
+        const skills = <div className="content has-text-white">
+            <h2 className="title is-2 has-text-white">especialidades</h2>
             <p>Conheça abaixo algumas das tecnologias que temos mais experiência. Caso precise de algum serviço específico ou queria informaçõe sobre determinada tecnologia, entre em contato pelo e-mail <a href="mailto:comercial@visualworks.com.br">comercial@visualworks.com.br</a>.</p>
             <div className="columns">
                 <div className="column">
-                    <h3 className="title is-3">linguagens</h3>
+                    <h3 className="title is-3 has-text-white">linguagens</h3>
                     {this.createDeveloperContent()}
                 </div>
                 <div className="column">
-                    <h3 className="title is-3">OS &amp; server</h3>
+                    <h3 className="title is-3 has-text-white">OS &amp; server</h3>
                     {this.createAdministratorContent()}
                 </div>
                 <div className="column">
-                    <h3 className="title is-3">frameworks</h3>
+                    <h3 className="title is-3 has-text-white">frameworks</h3>
                     {this.createFrameworkContent()}
                 </div>
                 <div className="column">
-                    <h3 className="title is-3">cloud</h3>
+                    <h3 className="title is-3 has-text-white">cloud</h3>
                     {this.createCloudContent()}
                 </div>
             </div>
