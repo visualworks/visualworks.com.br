@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src/",
     output: {
         path: path.resolve(__dirname, "dist/"),
         filename: "index.js"
@@ -15,14 +15,16 @@ module.exports = {
             {
                 test: /\.(jsx|js)$/,
                 exclude: /node_modules/,
-                loader: "babel-loader",
-                query: {
-                    presets: ["react"]
+                use: {
+                    loader: "babel-loader"
                 }
             },
             {
                 test: /\.(css|scss|sass)$/,
-                include: [path.resolve(__dirname, "src/css")],
+                include: [
+                    path.resolve(__dirname, "src")
+                ],
+                exclude: /node_modules/,
                 loader: ["style-loader", "css-loader", "sass-loader"]
             },
             {
@@ -38,9 +40,9 @@ module.exports = {
     resolve: {
         modules: [
             "node_modules",
-            path.resolve("./src")
+            path.resolve("src")
         ],
-        extensions: [".js", ".jsx", ".scss"]
+        extensions: [".js", ".jsx", ".scss", ".css"]
     },
     performance: {
         hints: "warning",
@@ -48,6 +50,17 @@ module.exports = {
         maxEntrypointSize: 600000,
         assetFilter: function (assetFilename) {
             return assetFilename.endsWith(".css") || assetFilename.endsWith(".js");
+        }
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    name: "commons",
+                    chunks: "initial",
+                    minChunks: 2
+                }
+            }
         }
     },
     target: "web",
@@ -72,7 +85,9 @@ module.exports = {
             {
                 from: path.resolve(__dirname, "src/img"),
                 to: path.resolve(__dirname, "dist/img")
-            },
+            }
+        ]),
+        new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, "src/fonts"),
                 to: path.resolve(__dirname, "dist/fonts")

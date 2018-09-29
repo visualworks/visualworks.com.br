@@ -14,7 +14,7 @@ export default class Navbar extends App {
         return navbarContent;
     }
     createLogo() {
-        const logo = <h1 className="logo title is-1 is-size-2-mobile is-marginless"><a className="navbar-item has-text-white is-paddingless" href="https://www.visualworks.com.br">Visual Works</a></h1>;
+        const logo = <h1 className="logo title is-1 is-size-2-mobile is-marginless"><a className="navbar-item has-text-white is-paddingless" href="https://www.visualworks.com.br" rel="external,noopener,noreferrer">Visual Works</a></h1>;
         const navbarBrand = <div className="navbar-brand">{logo}</div>;
         return navbarBrand;
     }
@@ -26,17 +26,17 @@ export default class Navbar extends App {
                         <i className="fab fa-linkedin"></i>
                     </span>
                 </a>
-                <a className="navbar-item has-text-white" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://www.visualworks.com.br" target="_blank" href="https://twitter.com/henriqueamattos">
+                <a className="navbar-item has-text-white" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://www.visualworks.com.br" target="_blank" href="https://twitter.com/henriqueamattos" rel="external,noopener,noreferrer">
                     <span className="icon">
                         <i className="fab fa-twitter"></i>
                     </span>
                 </a>
-                <a className="navbar-item has-text-white" href="https://github.com/visualworks" target="_blank">
+                <a className="navbar-item has-text-white" href="https://github.com/visualworks" target="_blank" rel="external,noopener,noreferrer">
                     <span className="icon">
                         <i className="fab fa-github"></i>
                     </span>
                 </a>
-                <a className="navbar-item has-text-white" href="https://facebook.com/visualworks.web" target="_blank">
+                <a className="navbar-item has-text-white" href="https://facebook.com/visualworks.web" target="_blank" rel="external,noopener,noreferrer">
                     <span className="icon">
                         <i className="fab fa-facebook"></i>
                     </span>
