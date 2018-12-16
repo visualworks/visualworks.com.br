@@ -22,7 +22,7 @@ export default class Layout extends App {
                         <div>
                             <a href="https://gsuite.google.com/intl/pt-BR/landing/partners/referral/trial.html?utm_source=sign-up&utm_medium=referralbutton1&utm_campaign=apps-referral-program&utm_content=R3RD7V8" target="_blank" rel="external,noopener,noreferrer"><img src="/img/g-suite-referral-pt_BR.jpg" alt="G Suite - Inicie sua avaliação gratuita aqui" title="G Suite - Inicie sua avaliação gratuita aqui" /></a>
                         </div>
-                        <div className="fb-like" data-href="https://www.facebook.com/visualworks.web" data-layout="button" data-action="recommend" data-size="large" data-show-faces="false" data-share="false"></div>
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fvisualworks.web&width=62&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId=132958300798146" width="62" height="65" style={{border:"none",overflow:"hidden"}} scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </footer>
             </div>

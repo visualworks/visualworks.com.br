@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="<%= htmlWebpackPlugin.options.author %>">
     <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
@@ -24,18 +25,6 @@
 
 <body>
     <div id="app"></div>
-    <div id="fb-root"></div>
-    <script type="text/javascript">
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=132958300798146';
-            js.setAttribute('crossorigin', 'anonymous');
-            js.setAttribute("type", "text/javascript");
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18205878-1" type="text/javascript" crossorigin="anonymous"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
