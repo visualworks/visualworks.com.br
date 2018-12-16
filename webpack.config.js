@@ -8,7 +8,8 @@ module.exports = {
     entry: "./src/",
     output: {
         path: path.resolve(__dirname, "dist/"),
-        filename: "index.js"
+        filename: "index.js",
+        crossOriginLoading: "anonymous",
     },
     module: {
         rules: [
@@ -97,5 +98,5 @@ module.exports = {
     // advanced
     parallelism: 2,
     profile: true,
-    cache: false
+    cache: true
 };
