@@ -39,7 +39,8 @@ export default class Subscriptions extends App {
                 <div className="column">
                     {this.formPayPal()}
                 </div>
-                <div className="column"></div>
+                <div className="column">
+                </div>
             </div>
         </div>;
         return subscription;

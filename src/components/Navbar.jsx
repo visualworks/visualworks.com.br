@@ -41,6 +41,11 @@ export default class Navbar extends App {
                         <i className="fab fa-facebook"></i>
                     </span>
                 </a>
+                <figure className="image is-128x128 is-pulled-right">
+                    <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2018-12-14&ci=AWS00450486" target="_blank">
+                        <img src="https://www.certmetrics.com/api/ob/image/amazon/c/1" alt="AWS Solutions Architect Certified" title="AWS Solutions Architect Certified" />
+                    </a>
+                </figure>
             </div>
         </div >;
         return navbarMenu;
