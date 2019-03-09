@@ -7,19 +7,17 @@ export default class Navbar extends App {
         this.navbar = this.createContent();
     }
     createContent() {
-        const navbarContent = <div className="container">
+        return <div className="container">
             {this.createLogo()}
             {this.createMenu()}
         </div>;
-        return navbarContent;
     }
     createLogo() {
-        const logo = <h1 className="logo title is-1 is-size-2-mobile is-marginless"><a className="navbar-item has-text-white is-paddingless" href="https://www.visualworks.com.br" rel="external,noopener,noreferrer">Visual Works</a></h1>;
-        const navbarBrand = <div className="navbar-brand">{logo}</div>;
-        return navbarBrand;
+        const logo = (<h1 className="logo title is-1 is-size-2-mobile is-marginless"><a className="navbar-item has-text-white is-paddingless" href="https://www.visualworks.com.br" rel="external,noopener,noreferrer">Visual Works</a></h1>);
+        return (<div className="navbar-brand">{logo}</div>);
     }
     createMenu() {
-        const navbarMenu = <div className="navbar-menu is-hidden-mobile">
+        return (<div className="navbar-menu is-hidden-mobile">
             <div className="navbar-end">
                 <a className="navbar-item has-text-white" href="https://linkedin.com/in/henriqueamattos" target="_blank">
                     <span className="icon">
@@ -46,9 +44,13 @@ export default class Navbar extends App {
                         <img src="https://www.certmetrics.com/api/ob/image/amazon/c/1" alt="AWS Solutions Architect Certified" title="AWS Solutions Architect Certified" />
                     </a>
                 </figure>
+                <figure className="image is-128x128 is-pulled-right">
+                    <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-03-07&ci=AWS00450486" target="_blank">
+                        <img src="https://www.certmetrics.com/api/ob/image/amazon/c/2" alt="AWS Developer Certified" title="AWS Developer Certified" />
+                    </a>
+                </figure>
             </div>
-        </div >;
-        return navbarMenu;
+        </div >);
     }
     render() {
         return this.navbar;
