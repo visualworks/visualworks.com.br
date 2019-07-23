@@ -22,8 +22,8 @@ pipeline {
             }
         }
         stage('Deploy') {
-            if(${env.BRANCH_NAME} == 'master'){
-                steps {
+            steps {
+                if(${env.BRANCH_NAME} == 'master'){
                     sh "AWS_ACCESS_KEY_ID=$AWS_USR"
                     sh "AWS_SECRET_ACCESS_KEY=$AWS_PSW"
                     sh "AWS_CONFIG_FILE=/home/ec2-user/.aws/config"
