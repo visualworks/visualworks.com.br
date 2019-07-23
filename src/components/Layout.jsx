@@ -1,5 +1,5 @@
 import React from "react";
-import App from "app";
+import App from "../app";
 import Navbar from "./Navbar";
 import About from "./About";
 import Subscriptions from "./Subscriptions";
