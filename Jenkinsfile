@@ -4,6 +4,7 @@ pipeline {
     environment {
         AWS            = credentials("aws-s3")
         HOME           = "."
+        NODE_ENV       = "production"
     }
     stages {
         stage('Install') {
