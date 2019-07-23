@@ -1,9 +1,8 @@
 import React from "react";
 import App from "app";
-import Navbar from "components/Navbar";
-import About from "components/About";
-import Skills from "components/Skills";
-import Subscriptions from "components/Subscriptions";
+import Navbar from "./Navbar";
+import About from "./About";
+import Subscriptions from "./Subscriptions";
 
 export default class Layout extends App {
     render() {
