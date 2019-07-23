@@ -1,10 +1,6 @@
 # Custom files
-dumps/*
-dumps.zip
-.vscode/*
-package-lock.json
-dist/*
-.jshintrc
+.idea
+dist
 
 # Logs
 logs
