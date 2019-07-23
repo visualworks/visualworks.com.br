@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Install & Build') {
             steps {
-                sh "npm install"
+                sh "npm install && npm install -g webpack webpack-cli"
                 sh "npm run build"
             }
         }
