@@ -22,7 +22,7 @@ pipeline {
             }
         }
         stage('Deploy') {
-            if(env.BRANCH_NAME == 'master'){
+            if(${env.BRANCH_NAME} == 'master'){
                 steps {
                     sh "AWS_ACCESS_KEY_ID=$AWS_USR"
                     sh "AWS_SECRET_ACCESS_KEY=$AWS_PSW"
