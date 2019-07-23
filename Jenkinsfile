@@ -4,11 +4,12 @@ pipeline {
     environment {
         AWS            = credentials("aws-s3")
         HOME           = "."
+        NODE_ENV       = "production"
     }
     stages {
         stage('Install') {
             steps {
-                sh "npm install"
+                sh "npm install --loglevel verbose"
             }
         }
         stage('Build') {
