@@ -7,39 +7,17 @@ export default class Subscriptions extends App {
         this.form = this.createContent();
     }
     createContent() {
-        const subscription = <div className="content has-text-white">
-            <h2 className="title is-2 has-text-white">assinaturas</h2>
+        const subscription = <div className="content">
             <div className="columns">
                 <div className="column is-one-third">
-                    <p>Se você já sabe qual serviço escolher, faça sua assinatura preenchendo o formulário ao lado com a segurança PayPal.</p>
-                    <p>Somente válido para hospedagem e registro de domínios. Para solução de e-mails G Suite ou desenvolver um site, por favor entre em contato através do e-mail <a href="mailto:comercial@visualworks.com.br" className="has-text-white">comercial@visualworks.com.br</a>.</p>                        
-                    <div className="columns is-centered is-hidden-mobile">
-                        <div className="column">
-                            <span className="icon is-large">
-                                <i className="fab fa-3x fa-paypal"></i>
-                            </span>
-                        </div>
-                        <div className="column">
-                            <span className="icon is-large">
-                                <i className="fab fa-3x fa-cc-amex"></i>
-                            </span>
-                        </div>
-                        <div className="column">
-                            <span className="icon is-large">
-                                <i className="fab fa-3x fa-cc-visa"></i>
-                            </span>
-                        </div>
-                        <div className="column">
-                            <span className="icon is-large">
-                                <i className="fab fa-3x fa-cc-mastercard"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="column">
+                    <h2 className="title is-4">contrate</h2>
+                    <p>Se você já sabe qual serviço escolher, faça sua assinatura preenchendo o formulário abaixo com a segurança PayPal.</p>
+                    <p>Somente válido para hospedagem e registro de domínios. Para solução de e-mails G Suite ou desenvolver um site, por favor entre em contato através do e-mail <a href="mailto:comercial@visualworks.com.br">comercial@visualworks.com.br</a>.</p>
                     {this.formPayPal()}
                 </div>
                 <div className="column">
+                    <h2 className="title is-4">entenda sua hospedagem</h2>
+                    <p className="has-text-right"><img src="/img/aws-architecture.png" width="100%" title="Arquitetura básica da hospedagem de aplicação na nuvem" alt="Arquitetura básica da hospedagem de aplicação na nuvem AWS" /></p>
                 </div>
             </div>
         </div>;

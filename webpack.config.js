@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: "./src/",
+    entry: `${path.resolve(__dirname, "src")}/index.jsx`,
     output: {
         path: path.resolve(__dirname, "dist/"),
         filename: "index.js",
@@ -41,7 +41,7 @@ module.exports = {
     resolve: {
         modules: [
             "node_modules",
-            path.resolve("src")
+            path.resolve(__dirname, "src")
         ],
         extensions: [".js", ".jsx", ".scss", ".css"]
     },

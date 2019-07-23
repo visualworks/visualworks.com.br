@@ -5,18 +5,20 @@ $fa-font-path: "/fonts";
 
 $blue: #1063A7;
 $white: #fff;
-$primary: $blue;
-$primary-invert: $white;
-$label-color: $white;
+$primary: $white;
+$primary-invert: $blue;
+$label-color: $grey-darker;
+$text: $grey-darker;
+$text-strong: $grey-darker;
 
 body {
-    background-color: $primary;
+    //background-color: $white;
 }
 
 .navbar h1.logo {
     font-family: all-round-gothic, sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: lowercase;
 }
 
@@ -24,16 +26,14 @@ body {
     margin-bottom: 3rem;
 }
 
+.navbar-item, .navbar-link {
+    color: $blue !important;
+}
+
 img.paypal {
     height: auto;
     width: 180px;
     max-width: 180px;
-}
-
-.hero-foot {
-    background-color: #fff;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 @import "node_modules/bulma/bulma";
