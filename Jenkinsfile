@@ -7,16 +7,9 @@ pipeline {
         NODE_ENV       = "production"
     }
     stages {
-        stage('Install') {
+        stage('Install & Build') {
             steps {
-                sh "pwd"
                 sh "npm install"
-            }
-        }
-        stage('Build') {
-            steps {
-                sh "pwd"
-                sh "ls -la"
                 sh "npm run build"
             }
         }
