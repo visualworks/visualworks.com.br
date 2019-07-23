@@ -65,7 +65,6 @@ module.exports = {
         }
     },
     target: "web",
-    stats: "detailed",
     plugins: [
         new webpack.DefinePlugin({
             "process.env": {
