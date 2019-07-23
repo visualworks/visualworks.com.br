@@ -34,7 +34,8 @@ export default class About extends App {
             <div className="columns">
                 <div className="column">{this.servicesHosting()}</div>
                 <div className="column">{this.servicesEmails()}</div>
-                <div className="column">{this.servicesWordPress()}</div>
+                <div className="column">{this.servicesPhp()}</div>
+                <div className="column">{this.servicesJavascript()}</div>
             </div>
         </div>;
         return aboutServices;
@@ -48,9 +49,9 @@ export default class About extends App {
                             <i className="fab fa-3x fa-aws"></i>
                         </span>
                     </p>
-                    <h3 className="is-3">Hospedagem &amp; Domínios</h3>
+                    <h3 className="is-3">Hospedagem</h3>
                 </div>
-                <p>Oferecemos através da Amazon Web Services o serviço de hospedagem e registro de domínios. Contamos com serviços dedicados para banco de dados, aplicações, distribuição de carga, caching, distribuição de conteúdo, certificados SSL e mais.</p>
+                <p>Infraestrutura global para sua aplicação, incluindo banco de dados, certificados SSL e registro de domínios através da Amazon Web Services.</p>
                 {/* <p>Leveraging Amazon Web Services to host your application in the cloud. Dedicated services for domains, databases, applications, load balancers, caching, CDN and SSL certificates.</p> */}
             </div>
         </div>;
@@ -67,28 +68,45 @@ export default class About extends App {
                     </p>
                     <h3 className="is-3">E-mails</h3>
                 </div>
-                <p>A ferramenta G Suite do Google é a plataforma completa para comunicação e organização corporativa na nuvem, oferecendo gerenciamento de e-mails, documentos, calendários, bate-papos e muito mais.</p>
+                <p>Plataforma completa para comunicação e organização corporativa com gerenciamento de e-mails, documentos, calendários, e bate-papo através do G Suite.</p>
                 {/* <p>Offering Google's G Suite, your business can rely on a stable and complete suite of communication and productivity tools. including e-mail, calendar, chat, docs, forms, drive and more...</p> */}
             </div>
         </div>;
       return servicesEmails;
     }
-    servicesWordPress() {
-        const servicesWordPress = <div className="card">
+    servicesPhp() {
+        const servicesPhp = <div className="card">
             <div className="card-content">
                 <div className="has-text-centered">
                     <p>
                         <span className="icon is-large">
-                            <i className="fab fa-3x fa-wordpress"></i>
+                            <i className="fab fa-3x fa-php"></i>
                         </span>
                     </p>
-                    <h3 className="is-3">WordPress</h3>
+                    <h3 className="is-3">PHP</h3>
                 </div>
-                <p>Instalação, configuração, suporte, manutenção e atualização de aplicações WordPress. Se o sistema estiver hospedado conosco, o serviço é gratuito, mas também oferecemos o serviço na sua hospedagem.</p>
+                <p>Desenvolvimento e manutenção de aplicações PHP e MySQL/MariaDB, com opção de cache em memória, incluindo WordPress, Magento, Zend Framework ou nativa.</p>
                 {/* <p>Installation, configuration, support and maintenance of WordPress applications. It's free if hosted with us, but you can have our services in your server if preferrable.</p> */}
             </div>
         </div>;
-      return servicesWordPress;
+      return servicesPhp;
+    }
+    servicesJavascript() {
+        const servicesPhp = <div className="card">
+            <div className="card-content">
+                <div className="has-text-centered">
+                    <p>
+                        <span className="icon is-large">
+                            <i className="fab fa-3x fa-node-js"></i>
+                        </span>
+                    </p>
+                    <h3 className="is-3">NodeJS</h3>
+                </div>
+                <p>Desenvolvimento e manutenção de aplicações em NodeJS ou similares, em TypeScript e JavaScript, com os principais frameworks, como UI5, ReactJS, Express e outros.</p>
+                {/* <p>Installation, configuration, support and maintenance of WordPress applications. It's free if hosted with us, but you can have our services in your server if preferrable.</p> */}
+            </div>
+        </div>;
+        return servicesPhp;
     }
     render() {
         return (this.about);
