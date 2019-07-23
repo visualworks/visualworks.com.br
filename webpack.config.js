@@ -43,7 +43,7 @@ module.exports = {
             "node_modules",
             path.resolve(__dirname, "src")
         ],
-        extensions: ["", ".js", ".jsx", ".scss", ".css"]
+        extensions: ["*", ".js", ".jsx", ".scss", ".css"]
     },
     performance: {
         hints: "warning",
