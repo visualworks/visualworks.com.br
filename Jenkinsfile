@@ -9,14 +9,11 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh "mkdir node_modules dist"
                 sh "npm install --loglevel verbose"
             }
         }
         stage('Build') {
             steps {
-                sh "pwd"
-                sh "ls -la"
                 sh "npm run build"
             }
         }
