@@ -9,11 +9,13 @@ pipeline {
     stages {
         stage('Install') {
             steps {
+                sh "pwd"
                 sh "npm install"
             }
         }
         stage('Build') {
             steps {
+                sh "pwd"
                 sh "ls -la"
                 sh "npm run build"
             }
