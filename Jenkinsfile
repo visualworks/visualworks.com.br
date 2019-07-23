@@ -7,9 +7,13 @@ pipeline {
         NODE_ENV       = "production"
     }
     stages {
-        stage('Install & Build') {
+        stage('Install') {
             steps {
-                sh "npm install && npm install -g webpack webpack-cli"
+                sh "npm install --loglevel verbose"
+            }
+        }
+        stage('Build') {
+            steps {
                 sh "npm run build"
             }
         }
