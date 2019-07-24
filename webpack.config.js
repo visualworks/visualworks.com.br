@@ -64,12 +64,8 @@ module.exports = {
         }
     },
     target: "web",
+    mode: "production",
     plugins: [
-        new webpack.DefinePlugin({
-            "process.env": {
-                "NODE_ENV": process.env.NODE_ENV ? process.env.NODE_ENV : "production"
-            }
-        }),
         new UglifyJsPlugin(),
         new HTMLWebpackPlugin({
             title: "Visual Works - Web & Mobile Development",
