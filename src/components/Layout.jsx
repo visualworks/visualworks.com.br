@@ -9,7 +9,7 @@ export default class Layout extends App {
         return (
             <div>
                 <header>
-                    <nav className="navbar" role="navigation" aria-label="main navigation"><Navbar/></nav>
+                    <nav className="navbar has-background-primary" role="navigation" aria-label="main navigation"><Navbar/></nav>
                 </header>
                 <div className="container">
                     <About/>

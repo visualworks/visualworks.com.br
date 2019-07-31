@@ -7,10 +7,10 @@ export default class Navbar extends App {
         this.navbar = this.createContent();
     }
     createContent() {
-        return <div className="container">
+        return (<div className={"container"}>
             {this.createLogo()}
             {this.createMenu()}
-        </div>;
+        </div>);
     }
     createLogo() {
         const logo = (<h1 className="logo title is-1 is-size-2-mobile"><a className="navbar-item" href="https://www.visualworks.com.br" rel="external,noopener,noreferrer">Visual Works</a></h1>);
