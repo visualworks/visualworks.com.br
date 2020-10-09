@@ -1,7 +1,7 @@
 {
   "name": "visualworks.com.br",
-  "version": "1.0.0",
-  "description": "To be described.",
+  "version": "2.0.0",
+  "description": "Visual Works - Web & Mobile - Hospedagem, Desenvolvimento e Consultoria",
   "main": "src/index.js",
   "directories": {
     "components": "components"
