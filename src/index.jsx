@@ -1,7 +1,6 @@
-import "./scss/style.scss";
 import React from "react";
 import ReactDOM from "react-dom";
-import Layout from "./components/Layout";
+import Layout from "pages/Layout";
 
 const layout = <Layout />;
 const targetDiv = document.getElementById("app");

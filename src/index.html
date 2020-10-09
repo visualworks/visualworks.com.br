@@ -5,33 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="<%= htmlWebpackPlugin.options.author %>">
-    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/img/favicon.png" />
-    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="<%= htmlWebpackPlugin.options.url %>" />
-    <meta property="og:image" content="<%= htmlWebpackPlugin.options.image %>" />
-    <meta property="og:image:alt" content="<%= htmlWebpackPlugin.options.title %>" />
-    <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:locale:alternate" content="en_US" />
-    <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="author" content="Visual Works">
+    <meta name="description"
+          content="A freelancing agency ran by Henrique Mattos leveraging web and mobile development in the cloud. Hosting applications in AWS and e-mails in Google's G Suite, Visual Works has 13 years of history with projects ranging from front-end to back-end and APIs, including ReactJS, PHP, MySQL, Memcached and others cutting-edge technologies.">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="/img/favicon.png"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <meta property="og:title"
+          content="Visual Works - Web & Mobile - Consultoria, desenvolvimento e hospedagem de sites, e-commerces e aplicações - Registro de domínios e e-mails personalizados"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.visualworks.com.br"/>
+    <meta property="og:image" content="https://www.visualworks.com.br/img/logo-visual-works.png"/>
+    <meta property="og:image:alt"
+          content="Visual Works - Web & Mobile - Consultoria, desenvolvimento e hospedagem de sites, e-commerces e aplicações - Registro de domínios e e-mails personalizados"/>
+    <meta property="og:description"
+          content="Visual Works - Web & Mobile - Consultoria, desenvolvimento e hospedagem de sites, e-commerces e aplicações - Registro de domínios e e-mails personalizados"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:locale:alternate" content="en_US"/>
+    <meta property="og:site_name" content="Visual Works"/>
     <title>
-        <%= htmlWebpackPlugin.options.title %>
+        Visual Works - Web & Mobile - Consultoria, desenvolvimento e hospedagem de sites, e-commerces e aplicações -
+        Registro de domínios e e-mails personalizados
     </title>
 </head>
 
 <body>
-    <div id="app"></div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18205878-1" type="text/javascript" crossorigin="anonymous"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-18205878-1');
-    </script>
+<div id="app"></div>
+<script src="index.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18205878-1" type="text/javascript"
+        crossorigin="anonymous"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-18205878-1');
+</script>
 </body>
 
 </html>
