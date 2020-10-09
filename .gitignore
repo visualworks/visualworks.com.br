@@ -1,6 +1,7 @@
 # Custom files
 .idea
 dist
+build
 
 # Logs
 logs
