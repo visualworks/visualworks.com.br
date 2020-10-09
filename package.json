@@ -1,11 +1,18 @@
 {
   "name": "visualworks.com.br",
   "version": "1.0.0",
-  "description": "To be descripted.",
+  "description": "To be described.",
   "main": "src/index.js",
+  "directories": {
+    "components": "components"
+  },
   "scripts": {
-    "start": "env-cmd webpack-dev-server --config webpack.config.js --content-base dist/ --watch --progress --colors --mode development",
-    "build": "webpack --config webpack.config.js",
+    "prestart:processors": "rm -rf dist build tsconfig.tsbuildinfo && mkdir dist build",
+    "start:processors": "node_modules/.bin/tsc && node_modules/.bin/webpack --mode=development && node_modules/.bin/node-sass src/scss/ -o dist/css/",
+    "prestart": "npm run start:processors && cp -rf src/img dist/ && cp -rf src/fonts dist/ && cp -f src/index.html dist/",
+    "start": "NODE=development concurrently \"http-server dist --gzip=true -d -o\" \"node_modules/.bin/tsc -w\" \"node_modules/.bin/webpack --watch\" \"node_modules/.bin/node-sass -w src/scss -o dist/css\" ",
+    "prebuild": "npm install && npm run start:processors",
+    "build": "NODE=production webpack --config webpack.config.js",
     "test": "start-test"
   },
   "repository": {
@@ -18,37 +25,28 @@
     "url": "https://github.com/visualworks/visualworks.com.br/issues"
   },
   "homepage": "https://github.com/visualworks/visualworks.com.br#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "concurrently": "^5.3.0",
+    "core-js": "^3.6.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "@fortawesome/fontawesome-free": "^5.9.0",
-    "@mapbox/point-geometry": "^0.1.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-transform-react-constant-elements": "^6.23.0",
-    "babel-plugin-transform-react-inline-elements": "^6.22.0",
-    "babel-plugin-transform-react-jsx-compat": "^6.24.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "bulma": "^0.7.5",
-    "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^3.1.0",
-    "env-cmd": "^9.0.3",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^4.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.3",
-    "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@types/react": "^16.9.51",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "bulma": "^0.9.1",
+    "node-sass": "^4.14.1",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
